@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+
+    
+    background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+    font-family: Poppins;
+}
+
+.head {
+    color: #FFF;
+    text-align: center;
+    margin-top: 50px;
+}
+.container {
+    width: 35%;
+    background-color: #FFF;
+    margin:15px auto;
+    border-radius: 10px;
+}
+
+input[type='text'] {
+    height: 65px;
+    width: 100%;
+    padding: 0 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-family: Poppins;
+}
+
+.todobtn {
+    border-radius:50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.add {
+    height: 49px;
+    position: absolute;
+    margin-top: -74px;
+    justify-content: right;
+    margin-left: 32%;
+    cursor: pointer;
+}
+::placeholder {
+    margin-top: 50%;
+}
+
+.btn {
+    height: 0;
+   
+}
+
+.todocontainer {
+    width: 40%;
+    margin: auto;
+}
+
+li {
+    list-style-type: none;
+    font-size: 22px;
+}
+
+.licontainer {
+    display: flex;
+    width: 100%;
+    background: #86C6F4;
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    justify-content: space-around;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+
+.completeBtn,.deletebtn {
+    cursor: pointer;
+    background: none;
+    font-size: 25px;
+    border: none;
+    padding: 10px;
+}
+
+.deletebtn {
+    color: #fc3c04;
+}
+
+
+.licontainer  li {
+    flex : 1;
+    transition: ease 1s;
+}
+
+.popup {
+    position: absolute;
+    width: 20%;
+    right: 40%;
+    margin: 5% auto;
+    text-align: center;
+    align-items: center;
+    border-top: 5px solid #fdc867;
+    padding: 50px;
+    border-radius: 10px;
+    background: #fefeff;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fa-circle-check ,.fa-trash-can {
+    pointer-events: none;
+}
+.fa-circle-check {
+    color: green;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.1;
+    color: green;
+}
+
+.fall{
+    transform: translateY(20rem) rotate(20deg);
+    opacity:0;
+}
+
+.option , select{
+    border-radius: 10px;
+    position: absolute;
+    right: 25%;
+    display: flex;
+    margin: -34px -10px;
+    font-size: 14px;
+    height: 40px;
+    padding: 0 10px;
+    text-align: center;
+    justify-content: center;
+    font-family: Poppins;
+}
